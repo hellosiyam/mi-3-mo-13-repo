@@ -4,10 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Daisy UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <section>
-        
+        <h1> I Was Explore Tailwind Fream work</h1>
+        <h3>No today I explore Daisy UI fream work</h3>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-error">Error</button>
     </section>
+    <!-- Accordion  -->
+    <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <section>
+        <!-- Avatar -->
+        <div class="avatar online">
+            <div class="w-24 rounded-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+          </div>
+          <div class="avatar offline">
+            <div class="w-24 rounded-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+          </div>
+          <div class="avatar">
+            <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+          </div>
+      </section>
+      <section>
+        <!-- chat Bubble -->
+        <div class="chat chat-start">
+            <div class="chat-image avatar">
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS chat bubble component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              </div>
+            </div>
+            <div class="chat-header">
+              Obi-Wan Kenobi
+              <time class="text-xs opacity-50">12:45</time>
+            </div>
+            <div class="chat-bubble">You were the Chosen One!</div>
+            <div class="chat-footer opacity-50">Delivered</div>
+          </div>
+          <div class="chat chat-end">
+            <div class="chat-image avatar">
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS chat bubble component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              </div>
+            </div>
+            <div class="chat-header">
+              Anakin
+              <time class="text-xs opacity-50">12:46</time>
+            </div>
+            <div class="chat-bubble">I hate you!</div>
+            <div class="chat-footer opacity-50">Seen at 12:46</div>
+          </div>
+      </section>
+      <section>
+        <!-- countdown -->
+        <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div>
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div>
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div>
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:${counter};"></span>
+              </span>
+              sec
+            </div>
+          </div>
+      </section>
+      <section>
+        <!-- step -->
+        <ul class="steps steps-vertical">
+            <li class="step step-primary">Register</li>
+            <li class="step step-primary">Choose plan</li>
+            <li class="step">Purchase</li>
+            <li class="step">Receive Product</li>
+          </ul>
+      </section>
+      <section>
+        <!-- error  -->
+        <div role="alert" class="alert alert-error">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 shrink-0 stroke-current"
+              fill="none"
+              viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Error! Task failed successfully.</span>
+          </div>
+      </section>
+      <section>
+        <!-- mask -->
+        <img
+        class="mask mask-heart"
+        src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp" />
+      </section>
+      <section>
+        <!-- mockup -->
+        <div class="mockup-code">
+            <pre data-prefix="$"><code>npm i daisyui</code></pre>
+            <pre data-prefix=">" class="text-warning"><code>installing...</code></pre>
+            <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+          </div>
+      </section>
 </body>
 </html>
